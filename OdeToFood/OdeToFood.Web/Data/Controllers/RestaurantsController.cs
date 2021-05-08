@@ -11,6 +11,7 @@ namespace OdeToFood.Web.Data.Controllers
     public class RestaurantsController : Controller
     {
         // GET: Restaurants
+        // Hello
         private readonly IRestaurantData db;
         public RestaurantsController(IRestaurantData db)
         {

@@ -13,7 +13,7 @@ namespace OdeToFood.Web.Controllers
     public class HomeController : Controller
     {
         IRestaurantData db;
-
+        //Yes
         public HomeController(IRestaurantData db)
         {
             this.db = db;

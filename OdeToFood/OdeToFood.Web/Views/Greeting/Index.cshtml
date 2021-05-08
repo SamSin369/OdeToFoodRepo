@@ -1,0 +1,23 @@
+﻿@model OdeToFood.Web.Models.GreetingViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+
+
+
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+
+    <h2>Index</h2>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Message</h5>
+            <p class="card-text">@Model.Name</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+

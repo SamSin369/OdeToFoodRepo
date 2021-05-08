@@ -1,0 +1,211 @@
+﻿body {
+
+}
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+#videosWrapper {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.videoCSS {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+}
+
+
+.section1 {
+    position: relative;
+    
+}
+.neon-button {
+    position: absolute;
+    z-index: 10;
+  
+   
+}
+.section1 .neon-button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  
+    font-size: 16px;
+ 
+    border-radius: 5px;
+}
+
+    .section1 .btn:hover {
+        background-color: black;
+    }
+.neon-button {
+    font-size: 4rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon) !important;
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+    position: relative;
+}
+.small {
+    font-size: 1rem !important;
+    text-decoration: none !important;
+    color: black !important;
+  
+}
+    .small a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+/* 
+.neon-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7; */
+/* } */ */
+
+.neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+    color: var(--clr-bg);
+    text-shadow: none;
+}
+
+    .neon-button:hover::before,
+    .neon-button:focus::before {
+        opacity: 1;
+    }
+
+    .neon-button:hover::after,
+    .neon-button:focus::after {
+        opacity: 1;
+    }
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+.snip1574 {
+    font-family: 'Lato', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 310px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+    .snip1574 * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .snip1574 img {
+        max-width: 100%;
+        vertical-align: top;
+        opacity: 0.7;
+    }
+
+    .snip1574 figcaption {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 80px 10% 15%;
+    }
+
+        .snip1574 figcaption:before {
+            font-family: 'FontAwesome';
+            content: "\201C";
+            position: absolute;
+            font-size: 170px;
+            opacity: 0.35;
+            font-style: normal;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            top: 0px;
+            left: 50%;
+        }
+
+    .snip1574 blockquote {
+        padding: 0;
+        margin: 0;
+        font-style: italic;
+        font-size: 1.2em;
+    }
+
+    .snip1574 h3 {
+        font-family: 'Oswald';
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 3px 0;
+    }
+
+    .snip1574 h5 {
+        font-weight: 400;
+        margin: 0;
+        text-transform: uppercase;
+        color: #bbb;
+        letter-spacing: 1px;
+    }
+    .snip-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    @media screen and (max-width: 1080px) 
+    {
+        .snip-container {
+            flex-direction: column;
+           
+        }
+    }
